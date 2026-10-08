@@ -46,9 +46,9 @@ RUN set -eux; \
       https://github.com/Brainicism/bgutil-ytdlp-pot-provider.git \
       /opt/bgutil-ytdlp-pot-provider; \
     cd /opt/bgutil-ytdlp-pot-provider/server; \
-    npm ci --omit=dev --no-audit --no-fund; \
-    npm ci --no-audit --no-fund; \
+    npm ci --include=dev --no-audit --no-fund; \
     npx tsc; \
+    npm prune --omit=dev; \
     mkdir -p /root/yt-dlp-plugins/bgutil-ytdlp-pot-provider; \
     cp -r /opt/bgutil-ytdlp-pot-provider/plugin/* \
       /root/yt-dlp-plugins/bgutil-ytdlp-pot-provider/

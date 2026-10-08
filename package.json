@@ -1,16 +1,16 @@
 {
   "name": "malikverse-youtube-video-download",
-  "version": "2.0.0",
-  "description": "ClipFlow — YouTube video/audio downloader backend for Railway",
+  "version": "2.1.0",
+  "private": true,
+  "description": "ClipFlow / MalikVerse YouTube downloader backend (Express + yt-dlp + FFmpeg)",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
   "engines": {
-    "node": ">=20.0.0"
+    "node": ">=20"
   },
   "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.19.2"
+    "express": "^4.21.2"
   }
 }

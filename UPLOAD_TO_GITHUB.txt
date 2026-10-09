@@ -1,0 +1,9 @@
+GitHub upload
+1. Open your OWN repository on GitHub (not the upstream zararashraf repository).
+2. Upload the files from this ZIP into the repository root: main.py, requirements.txt, Dockerfile, Procfile, apt.txt, README.md, LICENSE, and .gitignore.
+3. Commit the changes.
+4. Deploy using the Dockerfile where possible.
+5. After deployment, open https://YOUR-BACKEND-DOMAIN/api/status.
+6. Set the frontend API base URL to the deployed backend domain.
+
+If the repo already has main.py or requirements.txt, replace them with these versions. Keep unrelated frontend files. Do not upload secrets, Google cookies, tokens, or .env files.
